@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   devise_for :users
   namespace :api, defaults: { format: :json}, constraints: { subdomain: 'api'}, path: "/" do
     namespace :v1, path: "/", constrains: ApiVersionConstraint.new(version: 1, default: true) do
-      resources :tasks
+      resources :users, only: [:show]
     end
   end
 end
