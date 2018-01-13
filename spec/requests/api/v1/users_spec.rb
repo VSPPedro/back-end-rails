@@ -79,7 +79,7 @@ RSpec.describe 'Users API', type: :request do
         expect(response).to have_http_status(200)  
       end
       it 'returns the json data for the updated user' do
-        expect(json_body[:email])
+        expect(json_body[:email]).to eq(user_params[:email])
       end
     end
     
