@@ -1,11 +1,11 @@
 require 'rails_helper'
 
 RSpec.describe 'Sessions API', type: :request do
-  before { host! 'api.taskmanager.dev' }
+  before { host! 'api.taskmanager.dev123' }
   let(:user) { create(:user) }
   let(:headers) do
     {
-      'Accept' => 'application/vnd.taskmanager.v1',
+      'Accept' => 'application/vnd.taskmanager.v11',
       'Content-Type' => Mime[:json].to_s
     }
   end
