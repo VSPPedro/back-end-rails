@@ -121,6 +121,7 @@ GEM
     polyamorous (1.3.2)
       activerecord (>= 3.0)
     rack (2.0.3)
+    rack-cors (1.0.2)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (5.0.2)
@@ -245,6 +246,7 @@ DEPENDENCIES
   jquery-rails
   mysql2 (>= 0.3.13, < 0.5)
   omniauth
+  rack-cors
   rails (= 5.0.2)
   ransack
   rspec-rails (~> 3.6)
