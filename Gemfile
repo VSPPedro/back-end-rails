@@ -67,3 +67,5 @@ gem 'devise_token_auth'
 
 gem 'rack-cors', :require => 'rack/cors'
 
+gem 'rails-i18n', '~> 5.0.0'
+
